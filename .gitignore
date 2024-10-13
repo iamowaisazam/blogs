@@ -16,4 +16,3 @@ error_log
 .ftpquota
 /.idea
 /.vscode
-vendor
