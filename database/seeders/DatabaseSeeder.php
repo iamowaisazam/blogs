@@ -20,14 +20,12 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CategorySubCategorySeeder::class,
-            ProductCollectionSeeder::class,
-            ProductSeeder::class,
+            CollectionSeeder::class,
             SliderSeedar::class,
             MenuSeeder::class,
             PagesSeeder::class,
             FilemanagerSeeder::class,
             SiteSettingSeeder::class,
-            PaymentMethodsSeeder::class,
         ]);
 
         // \App\Models\User::factory(10)->create();

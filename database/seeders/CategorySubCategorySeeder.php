@@ -19,93 +19,48 @@ class CategorySubCategorySeeder extends Seeder
          // category
          $categoriesData = [
 
-            // 1 Parent Categories
-            ["id" => 1, "title" => "Men's Fashion", "slug" => "mens-fashion" ,"image_id"=>"demo/cat_men.png","is_featured" => 1,
-            "child" => [
-                ["id" => 2, "title" => "T-Shirts", "slug" => "t-shirts"],
-                ["id" => 3,"title" => "Mens Pants Trousers", "slug" => "mens-pants-trousers"],
-                ["id" => 4,"title" => "Shoes", "slug" => "shoes"],
-            ]],
+                // 1 Parent Category: Blogging Tips
+                ["id" => 1, "title" => "Blogging Tips", "slug" => "blogging-tips", "image_id" => "demo/blogging_tips.png", "is_featured" => 1,
+                "child" => [
+                    ["id" => 2, "title" => "Content Creation", "slug" => "content-creation"],
+                    ["id" => 3, "title" => "SEO Strategies", "slug" => "seo-strategies"],
+                    ["id" => 4, "title" => "Monetization", "slug" => "monetization"],
+                ]],
 
-             // 2 Parent Categories
-            ["id" => 5, "title" => "Health & Beauty", "slug" => "health-beauty","image_id"=>"demo/cat_woman.png","is_featured" => 1,
-            "child" => [
-                ["id" => 6,"title" => "Makeup", "slug" => "makeup",],
-                ["id" => 7,"title" => "Skin Care", "slug" => "skin-care"],
-                ["id" => 8,"title" => "Beauty Tools", "slug" => "beauty-tools"],
-            ]],
+                // 2 Parent Category: Writing & Editing
+                ["id" => 5, "title" => "Writing & Editing", "slug" => "writing-editing", "image_id" => "demo/writing_editing.png", "is_featured" => 1,
+                "child" => [
+                    ["id" => 6, "title" => "Grammar & Style", "slug" => "grammar-style"],
+                    ["id" => 7, "title" => "Editing Tools", "slug" => "editing-tools"],
+                    ["id" => 8, "title" => "Storytelling", "slug" => "storytelling"],
+                ]],
 
+                // 3 Parent Category: Digital Marketing
+                ["id" => 9, "title" => "Digital Marketing", "slug" => "digital-marketing", "image_id" => "demo/digital_marketing.png", "is_featured" => 1,
+                "child" => [
+                    ["id" => 10, "title" => "Social Media", "slug" => "social-media"],
+                    ["id" => 11, "title" => "Email Marketing", "slug" => "email-marketing"],
+                    ["id" => 12, "title" => "Affiliate Marketing", "slug" => "affiliate-marketing"],
+                ]],
 
-             // 3 Parent Categories
-            ["id" => 9, "title" => "Women's Fashion", "slug" => "womens-fashion", "image_id"=>"demo/cat__woman2.png","is_featured" => 1,
-            "child" =>[
-                ["id" => 10,"title" => "Unstitched Fabric", "slug" => "unstitched-fabric"],
-                ["id" => 11,"title" => "Kurtas & Shalwar Kameez", "slug" => "kurtas-shalwar-kameez"],
-                ["id" => 12,"title" => "Tops", "slug" => "tops",],
-             ]
-            ],
+                // 4 Parent Category: Blogging Platforms
+                ["id" => 13, "title" => "Blogging Platforms", "slug" => "blogging-platforms", "image_id" => "demo/blogging_platforms.png", "is_featured" => 1,
+                "child" => [
+                    ["id" => 14, "title" => "WordPress", "slug" => "wordpress"],
+                    ["id" => 15, "title" => "Blogger", "slug" => "blogger"],
+                    ["id" => 16, "title" => "Medium", "slug" => "medium"],
+                ]],
 
+                // 5 Parent Category: Blogging Tools
+                ["id" => 17, "title" => "Blogging Tools", "slug" => "blogging-tools", "image_id" => "demo/blogging_tools.png", "is_featured" => 1,
+                "child" => [
+                    ["id" => 18, "title" => "Content Management Tools", "slug" => "content-management-tools"],
+                    ["id" => 19, "title" => "Analytics Tools", "slug" => "analytics-tools"],
+                    ["id" => 20, "title" => "Graphic Design Tools", "slug" => "graphic-design-tools"],
+                ]],
+            ];
 
-            // 4 Parent Categories
-            ["id" => 13, "title" => "Mother & Baby", "slug" => "mother-baby","image_id"=>"demo/cat__woman2.png","is_featured" => 1, 
-            "child" => [
-                ["id" => 14,"title" => "Milk Formula", "slug" => "milk-formula"],
-                ["id" => 15,"title" => "Diapering & Potty", "slug" => "diapering-potty"],
-                ["id" => 16,"title" => "Feeding", "slug" => "feeding"],
-            ]],
-          
-
-            // 5 Parent Categories
-            ["id" => 17,"title" => "Groceries & Pets", "slug" => "groceries-pets", "image_id"=>"demo/Groceries_Pets.png","is_featured" => 1,
-            "child" => [
-                ["id" => 18,"title" => "Fresh Produce", "slug" => "fresh-produce"],
-                ["id" => 19,"title" => "Breakfast", "slug" => "breakfast"],
-                ["id" => 20,"title" => "Beverages", "slug" => "beverages"],
-            ]],
-
-
-             // 6 Parent Categories
-            ["id" => 21, "title" => "Home & Lifestyle", "slug" => "home-lifestyle", "image_id"=>"demo/HomeLifestyle.png","is_featured" => 1,
-            "child" => [
-                ["id" => 22,"title" => "Bath", "slug" => "bath"],
-                ["id" => 23,"title" => "Bedding", "slug" => "bedding"],
-                ["id" => 24,"title" => "Furniture", "slug" => "furniture"],
-            ]],
-
-
-            // 7 Parent Categories
-            ["id" => 25 , "title" => "Electronic Devices", "slug" => "electronic-devices", "image_id"=>"","is_featured" => 0,
-            "child" => [
-              ["id" => 26,"title" => "Laptops", "slug" => "laptops"],
-              ["id" => 27,"title" => "Monitors", "slug" => "monitors"],
-              ["id" => 28,"title" => "Mobiles", "slug" => "mobiles"],
-            ]],
-
-
-            // 8 Parent Categories
-            ["id" => 29,"title" => "Electronic Accessories", "slug" => "electronic-accessories", "image_id"=>"","is_featured" => 0, "child" =>[
-             ["id" => 30,"title" => "Mobile Accessories", "slug" => "mobile-accessories"],
-             ["id" => 31,"title" => "Headphones & Headsets", "slug" => "headphones-headsets"],
-             ["id" => 32,"title" => "Wearable Technology", "slug" => "wearable-technology"],
-            ]],
-
-
-            // 9 Parent Categories
-            ["id" => 33, "title" => "TV & Home Appliances", "slug" => "tv-home-appliances", "image_id"=>"","is_featured" => 0, "child" => [
-                ["id" => 34,"title" => "Air Conditioners", "slug" => "air-conditioners"],
-                ["id" => 35,"title" => "Televisions", "slug" => "televisions"],
-                ["id" => 36,"title" => "Refrigerators", "slug" => "refrigerators"],
-            ]],
-
-
-            // 10 Parent Categories
-            ["id" => 37, "title" => "Sports & Outdoor", "slug" => "sports-o","image_id"=>"","is_featured" => 0,"child" => [
-                ["id" => 38,"title" => "Exercise & Fitness", "slug" => "exercise-fitness"],
-                ["id" => 39,"title" => "Sports Nutrition", "slug" => "sports-nutrition"],
-                ["id" => 40,"title" => "Team Sports", "slug" => "team-sports"],
-            ]],
-
-        ];
+        
 
         // Insert categories data
         foreach ($categoriesData as $categoryData) {

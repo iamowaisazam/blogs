@@ -15,9 +15,12 @@ class MenuSeeder extends Seeder
      */
     public function run()
     {
+
+        Menu::select('*')->delete();
+
         $menusData = [
             [
-                'title' => 'main menu',
+                'title' => 'Main Menu',
                 'slug' => 'main-menu',
                 'menuItem'=>[
                     [
@@ -25,62 +28,30 @@ class MenuSeeder extends Seeder
                         'link' => '/',
                     ],
                     [
-                        'title' => 'Shop',
-                        'link' => 'shop',
-                    ],
-                    [
-                        'title' => 'Men',
-                        'link' => '/shop?category=mens-fashion',
+                        'title' => 'About Us',
+                        'link' => '/pages/about',
                         'child' => [
-                            ['title' => 'T-Shirts', 'link' => '/shop?category=t-shirts'],
-                            ['title' => 'Mens Pants Trousers', 'link' => '/shop?category=mens-pants-trousers'],
-                            ['title' => 'Shoes', 'link' => '/shop?category=shoes'],
+                            ['title' => 'Who We Are', 'link' => '/pages/who-we-are'],
+                            ['title' => 'Our Mission', 'link' => '/pages/mission'],
+                            ['title' => 'Team', 'link' => '/pages/team'],
                         ],
                     ],
                     [
-                        'title' => 'Women',
-                        'link' => '/shop?category=womens-fashion',
+                        'title' => 'Services',
+                        'link' => '/pages/services',
                         'child' => [
-                            ['title' => 'Unstitched Fabric', 'link' => '/shop?category=unstitched-fabric'],
-                            ['title' => 'Kurtas & Shalwar Kameez', 'link' => '/shop?category=kurtas-shalwar-kameez'],
-                            ['title' => 'Tops', 'link' => '/shop?category=tops'],
+                            ['title' => 'Service 1', 'link' => '/pages/service1'],
+                            ['title' => 'Service 2', 'link' => '/pages/service2'],
+                            ['title' => 'Service 3', 'link' => '/pages/service3'],
                         ],
                     ],
                     [
-                        'title' => 'Health & Beauty',
-                        'link' => '/shop?category=health-beauty',
-                        'child' => [
-                            ['title' => 'Makeup', 'link' => '/shop?category=unstitched-fabric'],
-                            ['title' => 'Skin Care', 'link' => '/shop?category=skin-care'],
-                            ['title' => 'Beauty Tools', 'link' => '/shop?category=beauty-tools'],
-                        ],
+                        'title' => 'Contact Us',
+                        'link' => 'pages/contact-us',
                     ],
                     [
-                        'title' => 'Mother & Baby',
-                        'link' => '/shop?category=mother-baby',
-                        'child' => [
-                            ['title' => 'Milk Formula', 'link' => '/shop?category=milk-formula'],
-                            ['title' => 'Diapering & Potty', 'link' => '/shop?category=diapering-potty'],
-                            ['title' => 'Feeding', 'link' => '/shop?category=feeding'],
-                        ],
-                    ],
-                    [
-                        'title' => 'Home & Lifestyle',
-                        'link' => '/shop?category=home-lifestyle',
-                        'child' => [
-                            ['title' => 'Bath', 'link' => '/shop?category=bath'],
-                            ['title' => 'Bedding', 'link' => '/shop?category=bedding'],
-                            ['title' => 'Furniture', 'link' => '/shop?category=furniture'],
-                        ],
-                    ],
-                    [
-                        'title' => 'Electronic Devices',
-                        'link' => '/shop?category=electronic-devices',
-                        'child' => [
-                            ['title' => 'Laptops', 'link' => '/shop?category=laptops'],
-                            ['title' => 'Monitors', 'link' => '/shop?category=monitors'],
-                            ['title' => 'Mobiles', 'link' => '/shop?category=mobiles'],
-                        ],
+                        'title' => 'Frequently Ask Question',
+                        'link' => 'pages/faq',
                     ],
 
                 ]

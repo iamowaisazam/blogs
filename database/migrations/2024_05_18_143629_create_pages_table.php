@@ -17,8 +17,8 @@ class CreatePagesTable extends Migration
             $table->id(); // Primary key with AUTO_INCREMENT
             $table->string('title'); // Title column of type string
             $table->string('slug')->unique(); // Slug column with unique constraint
-            $table->text('shortdetails'); // Short details column of type text
-            $table->text('longdetails'); // Long details column of type text
+            $table->text('shortdetails')->nullable(); // Short details column of type text
+            $table->text('longdetails')->nullable(); // Long details column of type text
             $table->text('meta_title')->nullable(); // Meta title column of type text, nullable
             $table->text('meta_description')->nullable(); // Meta description column of type text, nullable
             $table->text('meta_keywords')->nullable(); // Meta keywords column of type text, nullable

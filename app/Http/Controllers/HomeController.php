@@ -48,17 +48,21 @@ class HomeController extends Controller
     {
         // session()->put('cart',[]);
         
-        $categories = Category::where('is_enable',1)->where('is_featured',1)->where('parent_id',null)->get();
+        // $categories = Category::where('is_enable',1)->where('is_featured',1)->where('parent_id',null)->get();
         // dd($categories);
-        $sliders = Slider::where('is_enable',1)->get(); 
-        $products = Product::where('is_enable',1)->where('is_featured',1)->get();
+        // $sliders = Slider::where('is_enable',1)->get(); 
+        // $products = Product::where('is_enable',1)->where('is_featured',1)->get();
         
-        $collectionProducts = Product::where('is_enable',1)->get();
-        $collections=Collection::where('is_featured',1)->orderBy('sort')->get();
-        $ProductCollections=ProductCollection::where('is_enable',1)->get();
+        // $collectionProducts = Product::where('is_enable',1)->get();
+        // $collections=Collection::where('is_featured',1)->orderBy('sort')->get();
+        // $ProductCollections=ProductCollection::where('is_enable',1)->get();
 
+        $home = Page::where('slug','home')->first();
+        $data = [
+            'home' => $home,
+        ];
 
-        return view('theme.home.home',compact('categories','products','sliders','collections','ProductCollections','collectionProducts'));
+        return view('theme.home.home',$data);
     }
 
     /**

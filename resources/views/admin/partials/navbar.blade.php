@@ -13,6 +13,14 @@
     </ul>
 </li>
 
+<li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+    <i class="mdi mdi-monitor"></i>
+    <span class="hide-menu"> Customization </span></a>
+    <ul aria-expanded="false" class="collapse">
+        <li><a href="{{URL::to('admin/menus/index')}}">Menus</a></li>
+    </ul>
+</li>
+
 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-google-pages"></i>
     <span class="hide-menu"> Pages </span></a>    
     <ul aria-expanded="false" class="collapse">
@@ -21,27 +29,15 @@
     </ul>
 </li>
 
-<li class="perent_Product">
-    <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-        <i class="mdi mdi-border-all"></i>
-        <span class="hide-menu">Inventory</span>
-    </a>
+{{-- <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+    <i class="mdi mdi-google-pages"></i>
+    <span class="hide-menu"> Blogs </span></a>    
     <ul aria-expanded="false" class="collapse">
-        <li><a href="{{URL::to('admin/collections/index')}}" class="collection-link-tag">All Collection</a></li>
-        <li><a href="{{URL::to('admin/categories/index')}}" class="category-link-tag">All Category</a></li>
-        <li><a href="{{URL::to('admin/products/index')}}" class="product-link-tag">All Products</a></li>
-        <li><a href="{{URL::to('admin/variations/index')}}" class="variation-link-tag">All Variations</a></li>
+        <li><a href="{{URL::to('admin/posts/index')}}">Posts</a></li>
+        <li><a href="{{URL::to('admin/categories/index')}}">Categories</a></li>
+        <li><a href="{{URL::to('admin/collections/index')}}">Collections</a></li>
     </ul>
-</li>
-
-<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-    <i class="ti-money"></i>
-    <span class="hide-menu">Sales</span></a>
-    <ul aria-expanded="false" class="collapse">
-        <li><a href="{{URL::to('admin/orders/index')}}">All Orders</a></li>
-        <li><a href="{{URL::to('admin/payment/index')}}">Payment Methods</a></li>
-    </ul>
-</li>
+</li> --}}
 
 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-folder-multiple-outline"></i>
     <span class="hide-menu"> Filemanager </span></a>
@@ -51,26 +47,7 @@
     </ul>
 </li>
 
-<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-    <i class="mdi mdi-monitor"></i>
-    <span class="hide-menu"> Report </span></a>
-    <ul aria-expanded="false" class="collapse">
-        <li><a href="{{URL::to('admin/reports/clients/index')}}">Customer</a></li>
-        <li><a href="{{URL::to('admin/reports/product/index')}}">Product</a></li>
-        <li><a href="{{URL::to('admin/reports/inventory/index')}}">Inventory</a></li>
-    </ul>
-</li>
 
-
-<li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-    <i class="mdi mdi-monitor"></i>
-    <span class="hide-menu"> Customization </span></a>
-    <ul aria-expanded="false" class="collapse">
-        <li><a href="{{URL::to('admin/menus/index')}}">Menus</a></li>
-        <li><a href="{{URL::to('admin/sliders/index')}}">Sliders</a></li>
-        <li><a href="{{URL::to('admin/newsletter/index')}}">Newsletter</a></li>
-    </ul>
-</li>
 
 <li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
     <i class="ti-settings"></i>

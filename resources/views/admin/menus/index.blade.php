@@ -50,7 +50,14 @@ href="{{asset('admin/assets/node_modules/datatables.net-bs4/css/responsive.dataT
                     <div class="col-sm-12">
                         <section class="card">
                             <header class="card-header bg-info">
-                                <h4 class="mb-0 text-white" >All Menu List</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 class="mb-0 text-white" >All Menu List</h4>
+                                    </div>
+                                    <div class="col-md-6 text-end">
+                                        <a class="btn btn-primary" href="{{URL::to('admin/menus/create')}}">Create New </a>
+                                    </div>
+                                </div>
                             </header>
                         <div class="card-body">    
                           <div class="table-responsive">

@@ -131,7 +131,7 @@
     body.menuOn:after { content: ''; background: rgba(0, 0,0, 0.5); position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 99; }
     body.menuOn .js-mobile-nav-toggle.mobile-nav--close .icon.an.an-times { color: #ffffff; position: relative; z-index: 999; }
     body.menuOn .pageWrapper,
-    body.menuOn .stickyNav { left:270px }
+    /* body.menuOn .stickyNav { left:270px } */
     body.menuOn .stickyNav .header-8 .js-mobile-nav-toggle.mobile-nav--close .icon.an.an-times { color: #000000; }
 
     #pageWrapper { position:relative; left:0; -ms-transition:all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }

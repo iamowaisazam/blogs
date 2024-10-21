@@ -366,8 +366,8 @@ class ComposerStaticInita36bf903df8967f04e807e6d7d475532
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -493,8 +493,8 @@ class ComposerStaticInita36bf903df8967f04e807e6d7d475532
         ),
         'Fruitcake\\Cors\\' => 
         array (
-            0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
-            1 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            1 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
         'Faker\\' => 
         array (
@@ -743,13 +743,11 @@ class ComposerStaticInita36bf903df8967f04e807e6d7d475532
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\CategorySubCategorySeeder' => __DIR__ . '/../..' . '/database/seeders/CategorySubCategorySeeder.php',
+        'Database\\Seeders\\CollectionSeeder' => __DIR__ . '/../..' . '/database/seeders/CollectionSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\FilemanagerSeeder' => __DIR__ . '/../..' . '/database/seeders/FilemanagerSeeder.php',
         'Database\\Seeders\\MenuSeeder' => __DIR__ . '/../..' . '/database/seeders/MenuSeeder.php',
         'Database\\Seeders\\PagesSeeder' => __DIR__ . '/../..' . '/database/seeders/PagesSeeder.php',
-        'Database\\Seeders\\PaymentMethodsSeeder' => __DIR__ . '/../..' . '/database/seeders/PaymentMethodsSeeder.php',
-        'Database\\Seeders\\ProductCollectionSeeder' => __DIR__ . '/../..' . '/database/seeders/ProductCollectionSeeder.php',
-        'Database\\Seeders\\ProductSeeder' => __DIR__ . '/../..' . '/database/seeders/ProductSeeder.php',
         'Database\\Seeders\\SiteSettingSeeder' => __DIR__ . '/../..' . '/database/seeders/SiteSettingSeeder.php',
         'Database\\Seeders\\SliderSeedar' => __DIR__ . '/../..' . '/database/seeders/SliderSeedar.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',

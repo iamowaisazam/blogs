@@ -28,35 +28,50 @@
 
        <style>
 
-         footer h4 {
-            font-size: 19px!important;
-            margin-bottom:17px!important;
-        }
+            footer h4 {
+                font-size: 19px!important;
+                margin-bottom:17px!important;
+            }
 
-        footer ul li a{
-            font-size: 15px;
-        }
+            footer ul li a{
+                font-size: 15px;
+            }
 
-        img.logo-web {
-            margin-left: 0px !important;
-        }
-
-        .grid__item {
-            float: none!important;
-            padding-left: 0px!important;
-            /* padding-right: 0; */
-            width: 100%!important;
-        }
-
-        .border-bottom .container-fluid{
-            padding: 0 39px;
-        }
-
-        #siteNav > li > a {
-            padding: 0 10px!important;
-        }
        
+
        </style>
+
+<style>
+    img.logo-web {
+        margin-left: 0px !important;
+    }
+
+    .grid__item {
+        float: none!important;
+        padding-left: 0px!important;
+        width: 100%!important;
+    }
+
+    .border-bottom .container-fluid{
+        padding: 0 39px;
+    }
+
+    #siteNav > li > a {
+        padding: 0 10px!important;
+    }
+
+    #siteNav  li a {
+        font-size: 15px;
+    }
+
+    .logo-web{
+        width: 168px;
+    }
+
+    .header-wrap{
+        padding: 10px 0px;
+    }
+</style>
 
     @yield('css')
 </head>
@@ -83,7 +98,6 @@
     </div>
     <!-- End Search Form Drawer -->
 
-
     <!-- Main Header -->
     <div class="header-section clearfix animated hdr-sticky">
             <!-- Desktop Header -->
@@ -91,17 +105,14 @@
                 @include('theme.components.topbar')
                 <div class="header-wrap d-flex border-bottom">
                     <div class="container-fluid">
-                        @if(isset($_s['menu_type']) && strtolower($_s['menu_type'])=='center')
-                           @include('theme.components.center_menu')
-                        @else
                            @include('theme.components.left_menu')
-                        @endif
                     </div>
                 </div>
             </div>
-        <!-- End Main Header -->
+            <!-- Desktop Header -->   
        @include('theme.components.mobile_menu')
     </div>
+     <!-- End Main Header -->
 
     <!-- Body Content -->
    @yield('content')
@@ -116,11 +127,10 @@
                     <div class="row">
 
                         <div class="col-md-4 footer-links">
-                                <a href="{{URL::to('/')}}">
-                                    <img style="width: 166px" src="{{asset($_s['logo'])}}" class="pb-3" />
-                                </a>
-                                <p>{{$_s['site_short_details']}}</p>
-                                  
+                            <a href="{{URL::to('/')}}">
+                                <img style="width: 166px" src="{{asset($_s['logo'])}}" class="pb-3" />
+                            </a>
+                            <p>{{$_s['site_short_details']}}</p>    
                         </div>
                         
                         <div class="col-md-8">
